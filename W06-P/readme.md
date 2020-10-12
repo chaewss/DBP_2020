@@ -1,6 +1,8 @@
 <새로 배운 내용>
 
 Github
+> cd DBP_2020/
+
 > git add *
 
 로컬 저장소에 바뀐 목록이 있을 때 목록에 등록 : add
@@ -11,12 +13,17 @@ Github
 
 원격 저장소에 넣음 : push
 
+
 CRUD : Create, Read, Update, Delete
+
 
 Database
 > mysql -uadmin -p
+
 > show databases
+
 > use employees;
+
 
 <문제가 발생하거나 고민한 내용>
 
@@ -36,16 +43,19 @@ Database
 
 isset를 이용해서 입력받은 사번이나 이름이 있는지 확인한다. 위의 방법으로 사용자에게 입력받아서 데이터를 전달받은 경우 포스트 방식으로 전달받은 방식이기 때문에
 > isset($_POST['emp_no'])
+
 를 입력하며, 만약 empno를 입력받았을 경우 사번을 where문에 조건으로 주기 때문에 
 > if (isset($_POST['emp_no'])) {
         $filtered_id = mysqli_real_escape_string($link, $_POST['emp_no']);
         $query = "SELECT * FROM employees WHERE emp_no='{$filtered_id}'";
     }
+    
 라고 작성하며, first_name을 입력받았을 경우 이름을 조건으로 검색하기 때문에
 > else if (isset($_POST['first_name'])) {
         $filtered_first_name = mysqli_real_escape_string($link, $_POST['first_name']);
         $query = "SELECT * FROM employees WHERE first_name='{$filtered_first_name}'";
     }
+    
 따로 조건문을 통해 쿼리를 입력해준다.
 
 2) 리다이랙션을 이용해 직원수정, 삭제를 할 경우 별도의 클릭 과정 없이 바로 직원 정보조회 페이지인 emp_select.php 페이지로 이동하게 했다.
@@ -63,10 +73,12 @@ isset를 이용해서 입력받은 사번이나 이름이 있는지 확인한다
 
 emp_update와 emp_delete에서는 이미 입력된 데이터 값을 라디오버튼으로 받아와야 하기 때문에
 > <?php if ($row['gender'] != "F") echo "checked"; ?> 
+
 라는 php코드를 추가하였다.
 
 emp_delete.php에서는 데이터 수정이 이루어지지 않아야 하기 때문에 다른 form 태그에서는 readonly속성을 붙였으나 라디오버튼에서는 동작하지 않아
 > onclick="return(false);"
+
 를 추가하였다.
 
 <참고할 만한 내용>
