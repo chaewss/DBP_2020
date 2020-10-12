@@ -2,10 +2,13 @@
 
 Github
 > git add *
+
 로컬 저장소에 바뀐 목록이 있을 때 목록에 등록 : add
 > git commit -m "message"
+
 실제로 목록에 등록한 내용을 로컬 저장소에 반영 : commit
 > git push origin master
+
 원격 저장소에 넣음 : push
 
 CRUD : Create, Read, Update, Delete
