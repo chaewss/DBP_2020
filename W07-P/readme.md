@@ -41,7 +41,8 @@ settype() : 어떤 값을 어떤 형태로 바꿀지 타입 지정
 <문제가 발생하거나 고민한 내용>
 원하는 부서 이름과 숫자를 입력하면 해당 부서의 직원 이름이 숫자만큼 나온다.
 index.php에
-> <form action="depart_info.php" method="GET">
+>   
+        <form action="depart_info.php" method="GET">
         (6) 부서 정보 <br>
         <select name="department">
             <option value="Customer Service">Customer Service</option>
