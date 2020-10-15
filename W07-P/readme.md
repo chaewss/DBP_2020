@@ -2,12 +2,14 @@
 
 ! 기억할것
 > cd /var/www/html/DBP_2020
+
 > sudo mysql -uadmin -p
+
 > USE employees;
 
 
 
-PHP
+! PHP
 php는 값을 대입할 때 type 확인. 변수 제일 앞에 $ 표시.
 
 > print $a
