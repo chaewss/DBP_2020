@@ -1,9 +1,10 @@
 <새로 배운 내용>
 
-기억할것
+! 기억할것
 > cd /var/www/html/DBP_2020
 > sudo mysql -uadmin -p
 > USE employees;
+
 
 
 PHP
