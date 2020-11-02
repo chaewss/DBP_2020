@@ -1,7 +1,7 @@
-+ 개발 환경 소개
+### <개발 환경 소개>
 솔직하게 MariaDB와 MySQL과의 차이가 거의 없어서 어떤 개발 환경을 써도 상관이 없었으나 MariaDB를 배울 때 Visual Studio Code를 사용하고 터미널을 내부에서 사용할 수 있던 점이 편해서 이번 과제 작성에 MariaDB를 사용하게 되었다.
 
-+ 발견한 정보
+### <발견한 정보>
 1) 영화 검색(배우별 출연 영화 & 영화별 출연 배우 검색)
 영화 검색을 클릭하면 dvd_select.php로 연결된다. 페이지에는
 > SELECT upper(concat(first_name, ' ', last_name)) 'Actor Name' FROM actor LIMIT 30
@@ -36,6 +36,7 @@ AND a.last_name = '{$filtered_last_name}'
 
 원하는 정보를 검색한 후 다시 index페이지로 돌아가는 href와, 이전 페이지로 돌아가는 href를 추가해서 메인페이지로 갈 것인지, 영화 검색 페이지로 갈 것인지 선택할 수 있게 했다.
 
+------------
 2) 영화 등급, 카테고리를 체크박스를 통해 선택하여 검색
 이용한 데이터베이스인 sakila가 DVD 대여 플랫폼을 구현한 것이기 때문에 영화의 등급과 카테고리별로 해당되는 영화를 검색할 수 있다면 좋을 것 같다는 생각을 했다. 영화 등급 5개(PG, G, NC-17, PG-13, R)와 영화 카테고리 16개(Action, Animation, Children ...)를 체크박스를 이용해 검색가능하게 구현하였다. 만약 사용자가 첫번째 체크박스를 PG, 두번째 체크박스를 Action으로 선택한 후 Search버튼을 누르면
 >SELECT f.title, f.rating, c.name
@@ -47,6 +48,7 @@ AND c.name = \"{$filtered_category}\"
 
 위의 sql문을 통해 검색한 값과 등급과 카테고리가 같은 영화를 검색해준다.
 
+------------
 3) 고객관리(고객 별 주소, 도시, 나라), 고객 이름 검색 가능 
 처음 고객관리 페이지인 customer_info.php 페이지에 들어가면 sql문
 > SELECT upper(concat(first_name, ' ', last_name)) 'Customer Name', a.address, city.city, coun.country
@@ -70,5 +72,5 @@ LIMIT 30
 
 (1), (2), (3) 세 메뉴 모두 보안을 위해 href를 통해 연결하지 않고, button을 생성해 해당 페이지로 이동 가능하게 구현하였다.
 
-+ 동작 화면 소개 영상
+### <동작 화면 소개 영상>
 테스트동영상 : https://youtu.be/j82xBoOt9Fs
