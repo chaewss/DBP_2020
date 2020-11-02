@@ -29,7 +29,7 @@ AND a.last_name = '{$filtered_last_name}'
         header('Location: dvd_select.php');
     }
 
-또한 아래의 sql문을 통해 first_name과 last_name 중 어느 하나라도 입력 값이 없을 경우에도 값을 다시 입력할 수 있게 dvd_select.php로 돌아가게 된다.
+또한 php파일 쪽 if문에 아래의 조건을 통해 first_name과 last_name 중 어느 하나라도 입력 값이 없을 경우에도 값을 다시 입력할 수 있게 dvd_select.php로 돌아가게 된다.
 > isset($_POST['first_name']) && isset($_POST['last_name'])
 
 
