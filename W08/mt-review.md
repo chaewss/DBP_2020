@@ -1,4 +1,5 @@
-<문제가 발생하거나 고민한 내용 => 새로 배운 내용>
+### <문제가 발생하거나 고민한 내용 => 새로 배운 내용>
+
 1) 오류 warning mysqli_fetch_array() expects parameter 1 to be mysqli_result boolean given 가 뜰 경우 세부적인 오류의 이유를 모르기 때문에 
 >$result = mysqli_query($link, $query) or die(mysqli_error($link));
 
@@ -12,10 +13,11 @@
         header('Location: ');
     }
 
-<참고할 만한 내용>
+### <참고할 만한 내용>
+
 오류 세부 내용 출력 : https://lunaticlobelia.tistory.com/465
 
-<회고>
+### <회고>
 
 '+ : 시험을 과제로 대체하다보니 여유를 갖고 원하는 방향의 결과를 스스로 찾아 낼 수 있어서 좋았다. 또 만족하지 못하는 부분에서 계속 더 고민하고 생각하다보니 과제의 완성도가 그래도.. 조금 더 좋아진 것 같다.
 
