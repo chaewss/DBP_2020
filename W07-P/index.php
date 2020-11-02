@@ -38,7 +38,11 @@
         </select>
         <input type="text" name="number" placeholder="number">
         <input type="submit" value="Search">
+<<<<<<< HEAD
     </form>
     
+=======
+    </form> 
+>>>>>>> 2597e0bad529b4680e637bcc528e09b95ea879dd
 </body>
 </html>
