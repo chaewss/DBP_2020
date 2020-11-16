@@ -41,4 +41,4 @@ sqldeveloper 창을 띄워놓고 IntelliJ 컴파일을 하면 데이터베이스
 \! 자바를 사용해 메서드단위로 짜니까 편리하다. 여러 파일을 만들고 그 파일들을 서로 연결시켜야 하는 부분이 불편했는데 객체단위로 프로그램을 짜는 것이 이런 부분에서 편리한 점도 있다는게 새로웠다.
 
 # 테스트 동영상
-https://youtu.be/j5QnlwQvz_E
+https://youtu.be/KTmSDRnbp-w
