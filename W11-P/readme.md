@@ -22,9 +22,7 @@ PreparedStatement는 sql문장이 미리 compile 되고(수행속도 빠름) 실
 
 
 # 문제가 발생하거나 고민한 내용
-IntelliJ에서 돌릴 때 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver 이라는 오류가 떳는데 항상 프로젝트 설정(Ctrl, Alt, Shift + S)에 들어가
-
-라이브러리에 jar의 위치 C:\Program Files\Java\jdk1.8.0_271\lib\ojdbc6.jar 를 입력해주면 된다.
+IntelliJ에서 돌릴 때 java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver 이라는 오류가 떳는데 항상 프로젝트 설정(Ctrl, Alt, Shift + S)에 들어가 라이브러리에 jar의 위치 C:\Program Files\Java\jdk1.8.0_271\lib\ojdbc6.jar 를 입력해주면 된다.
 
 앞으로도 모든 프로젝트를 돌릴때마다 추가해줘야 할 것 같아서 기록해놓는것!
 
