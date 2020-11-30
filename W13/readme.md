@@ -4,11 +4,17 @@ Linux - Apache (네트워크를 통해 서버로 접속할 수 있게 만듦. My
 톰캣의 경우 Apache와 같은 역할
 
 
+
 <% %> : jaba code를 넣기 위한 표시
+
+
 
 DB에 접속하기 위한 정보들을 입력하고 접속을 위한 try ~ catch문 후 마지막에 finally로 자원 반납
 
+
+
 rs.next()로 정보를 받아와야하는데 받아온 데이터가 몇개인지 모르나 있는만큼 다 나와야하기 때문에(until null) while(re.next())를 사용해 받아온 정보를 출력해준다.
+
 
 
 JSP(: Java Server Page)
@@ -21,14 +27,18 @@ JSP를 이용하면 PHP처럼 html 코드와 같이 자바 코드를 사용해 �
 html 파일에서 POST 방식으로 전달받은 데이터를 JSP 내장객체인 request로 받음
 
 
+
 > String employee_id = request.getParameter("employee_id");
 
 request.getParameter("변수이름") 을 통해 전달받은 데이터를 변수에 저장
 
 
+
 > pstmt = conn.prepareStatement(sql);	
 
 ORACLE DB에 sql문 전달
+
+
 
 > int n = pstmt.executeUpdate();
 
