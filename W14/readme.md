@@ -1,7 +1,11 @@
 # 새로 배운 내용
-* RDBMS(: Relational DB Management System) \n
-관계형 DB, 'table'형태로 저장, 테이블 구조: Schema \n
+
+```
+* RDBMS(: Relational DB Management System)
+관계형 DB, 'table'형태로 저장, 테이블 구조: Schema
  ex)MySQLm MariaDB, Oracle)
+```
+
 
 
 <% %> : jaba code를 넣기 위한 표시
